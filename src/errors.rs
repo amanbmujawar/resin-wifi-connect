@@ -97,6 +97,10 @@ error_chain! {
         TrapExitSignals {
             description("Trapping exit signals failed")
         }
+
+        SudoRelaunch {
+            description("Relaunching with 'sudo' failed")
+        }
     }
 }
 
@@ -122,6 +126,7 @@ pub fn exit_code(e: &Error) -> i32 {
         ErrorKind::NetworkManagerServiceState => 20,
         ErrorKind::BlockExitSignals => 21,
         ErrorKind::TrapExitSignals => 22,
+        ErrorKind::SudoRelaunch => 23,
         _ => 1,
     }
 }
