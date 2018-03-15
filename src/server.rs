@@ -153,7 +153,7 @@ pub fn start_server(
     chain.link(Write::<RequestSharedState>::both(request_state));
     chain.link_after(RedirectMiddleware);
 
-    let address = format!("{}:80", gateway_clone);
+    let address = format!("{}:81", gateway_clone);
 
     info!("Starting HTTP server on {}", &address);
 
