@@ -6,9 +6,9 @@ use std::str::FromStr;
 use std::path::PathBuf;
 use std::ffi::OsStr;
 
-const DEFAULT_GATEWAY: &str = "192.168.42.1";
-const DEFAULT_DHCP_RANGE: &str = "192.168.42.2,192.168.42.254";
-const DEFAULT_SSID: &str = "WiFi Connect";
+const DEFAULT_GATEWAY: &str = "172.24.1.1";
+const DEFAULT_DHCP_RANGE: &str = "172.24.1.2,172.24.1.254";
+const DEFAULT_SSID: &str = "tymlyn0001";
 const DEFAULT_ACTIVITY_TIMEOUT: &str = "0";
 const DEFAULT_UI_DIRECTORY: &str = "ui";
 
